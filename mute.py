@@ -31,7 +31,9 @@ def main():
             os.system("pactl set-source-mute 2 toggle")
             # This command gets the mute status of all devices, finds the final mute in the output and uses this to
             # figure out the current mute status of the microphone
-            mute = os.popen("pacmd list-sources | grep -e 'index: 2' -e muted | tail -1").read()
+            mute = os.popen(
+                "pacmd list-sources | grep -e 'index: 2' -e muted | tail -1"
+            ).read()
 
             # Just a bit of logic to handle the colour of the light dependant on mute status
             # This part of the write command contains 8 bytes of data:
