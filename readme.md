@@ -35,7 +35,7 @@ In the script, replace the number 2 on this line, with the number of the source 
 
 `            os.system("pactl set-source-mute 2 toggle")`
 
-If you add a new input device to your machine, you'll have to update the script manually.  For example, if I add in wireless headphones - I have to updated my source to '8'
+If you add a new input device to your machine, you'll have to update the script manually.  For example, if I add in wireless headphones - I have to update my source to '8'
 
 ## Running the Script
 
